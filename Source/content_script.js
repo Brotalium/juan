@@ -40,6 +40,14 @@ function handleText(textNode)
 	var v = textNode.nodeValue;
 
 	v = v.replace(/\bkill yourself\b/g, "have a nice day");
+
+	v = v.replace(/\bArtificial Intelligence\b/g, "Stochastic Parrot");
+	v = v.replace(/\bArtificial intelligence\b/g, "Stochastic parrot");
+	v = v.replace(/\bartificial Intelligence\b/g, "stochastic Parrot");
+	v = v.replace(/\bartificial intelligence\b/g, "stochastic parrot");
+	v = v.replace(/\bAI\b/g, "SP");
+	v = v.replace(/\bAIs\b/g, "SPs");
+	v = v.replace(/\bAI\'s\b/g, "SP\'s");
 	
 	textNode.nodeValue = v;
 }
